@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+}
+
+[application]
+
+config/name="OpenSpirit"
+run/main_scene="res://OpenSpirit.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=280
+window/size/height=120
+window/size/borderless=true
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
+
+[global]
+
+fonts=false
+
+[gui]
+
+theme/custom_font="res://new_dynamicfont.tres"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
