@@ -3,9 +3,9 @@
 # Now Version: V1.0 Beta
 # Powered by GODOT Game Engine(Published with MIT license)
 # Author List（no ranks）
-*Cynosure
-*Local MIcro
-*入梦1997
+* Cynosure
+* Local MIcro
+* 入梦1997
 # Also,we should thank for source author 嘟嘟虫(https://pinyin.sogou.com/skins/achome/index/05145513015871155a0e454b520b0c/pc/date/?rf=detail_author_539181),we couldn't contact with him,we just drew source up from his theme of sogoupinyin(an input-method),if he has any question about us,we will communicate with him as soon as we can.
 # Why OpenSpiritPlatform?
 ## This is a full open and free desktop spirit platform which users can enjoy it a lot in many OS,such as Windows and Linux,perhaps we will make a Android or IOS version ## in the future.
