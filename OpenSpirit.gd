@@ -1,6 +1,7 @@
 extends Control
-# 是否可拖动
-var dragging = true
+
+# 是否处于拖动状态。
+var dragging = false
 
 var text_path = ""
 
@@ -34,11 +35,24 @@ func _input(event):
 			dragging = false
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.is_pressed():
-		var textlabel = get_node("RichTextLabel")
-		var text1 = _random(text_list)
-		textlabel.text = text1
+		left_pressd()
 	if event is InputEventMouseMotion and dragging == true :
 		OS.set_window_position(OS.window_position + event.relative.normalized() *12)
+		left_dragged()
+
+# 鼠标左键被按下
+func left_pressd():
+	var textlabel = get_node("RichTextLabel")
+	var text1 = _random(text_list)
+	textlabel.text = text1
+
+# 使鼠标左键拖动
+func left_dragged():
+	pass
+
+# 鼠标键被按下
+func right_pressed():
+	pass
 
 func _loader(path):
 	pass
