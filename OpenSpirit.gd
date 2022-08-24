@@ -1,4 +1,5 @@
 extends Control
+onready var _player = $AudioStreamPlayer
 # 是否可拖动
 var dragging = true
 
@@ -37,6 +38,10 @@ func _input(event):
 		var textlabel = get_node("RichTextLabel")
 		var text1 = _random(text_list)
 		textlabel.text = text1
+		var track = load('res://test.mp3')
+		_player.stream = track
+		_player.play()
+		
 	if event is InputEventMouseMotion and dragging == true :
 		OS.set_window_position(OS.window_position + event.relative.normalized() *12)
 
