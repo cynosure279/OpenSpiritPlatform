@@ -21,3 +21,5 @@ margin_right = 273.0
 margin_bottom = 101.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
