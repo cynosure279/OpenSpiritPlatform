@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://pet.png" type="Texture" id=1]
 [ext_resource path="res://OpenSpirit.gd" type="Script" id=2]
+[ext_resource path="res://PopupMenu.gd" type="Script" id=3]
 
 [node name="UI" type="Control"]
 anchor_right = 1.993
@@ -19,3 +20,8 @@ margin_left = 87.0
 margin_top = 57.0
 margin_right = 273.0
 margin_bottom = 101.0
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+margin_right = 20.0
+margin_bottom = 20.0
+script = ExtResource( 3 )
